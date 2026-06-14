@@ -1,0 +1,159 @@
+/* ── VARIABLES CSS ── */
+:root {
+    --color-primario:       #F4F0E7;
+    --color-primario-oscuro:#6F060A;
+    --color-cafe:           #704214;
+    --color-gris:           #A46567;
+    --color-blanco:         #ffffff;
+    --color-negro:          #000000;
+    --color-texto:          #444444;
+}
+
+/* ── RESET ── */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}
+
+a {
+    color: var(--color-primario-oscuro);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-gris);
+}
+
+/* ── HEADER — selector por ID ── */
+#header {
+    background-color: var(--color-primario-oscuro);
+    color: var(--color-blanco);
+    padding: 30px 20px;          /* padding */
+    text-align: center;
+    display: flex;               /* Flexbox */
+    flex-direction: column;
+    align-items: center;         /* Flexbox: centra horizontalmente */
+    gap: 8px;
+}
+
+/* selector por clase */
+.logo {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.subtitulo {
+    font-size: 13px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+/* ── NAVBAR — selector por ID ── */
+#navbar {
+    background-color: var(--color-cafe);
+    padding: 0 20px;             /* padding */
+}
+
+/* selector por clase */
+.nav-lista {
+    list-style: none;
+    display: flex;               /* Flexbox */
+    justify-content: center;     /* Flexbox: centra los enlaces */
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-lista li a {
+    display: block;
+    color: var(--color-blanco);
+    padding: 14px 22px;          /* padding */
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-lista li a:hover {
+    background-color: rgba(255,255,255,0.12);
+    text-decoration: none;
+}
+
+/* ── SECCIONES — selector por clase ── */
+.seccion {
+    max-width: 800px;
+    margin: 0 auto;              /* margin: centra el bloque */
+    padding: 60px 24px;          /* padding */
+    text-align: center;
+}
+
+.seccion-clara {
+    background-color: var(--color-blanco);
+    max-width: 100%;
+    padding: 60px 24px;          /* padding */
+}
+
+/* Dentro de seccion-clara centramos el contenido con Flexbox */
+.seccion-clara {
+    display: flex;               /* Flexbox */
+    flex-direction: column;
+    align-items: center;         /* Flexbox: centra contenido */
+}
+
+.seccion-titulo {
+    font-size: 28px;
+    font-weight: normal;
+    color: var(--color-cafe);
+    margin-bottom: 16px;         /* margin */
+    letter-spacing: 2px;
+}
+
+.seccion-texto {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color-texto);
+    max-width: 650px;
+    margin: 0 auto;              /* margin: centrado automático */
+}
+
+/* ── CONTACTO — selector por clase ── */
+.contacto-lista {
+    list-style: none;
+    margin-top: 20px;            /* margin */
+    display: flex;               /* Flexbox */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto-lista li {
+    font-size: 15px;
+    color: var(--color-texto);
+}
+
+/* ── FOOTER — selector por ID ── */
+#footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px;               /* padding */
+    font-size: 13px;
+    display: flex;               /* Flexbox */
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-copy {
+    opacity: 0.5;
+    font-size: 11px;
+}
